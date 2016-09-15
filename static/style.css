@@ -24,11 +24,12 @@ h2 {
 }
 
 .button {
-    border-radius: 6px;
+    border-radius: 12px;
     font-family: 'Dosis', sans-serif;
-    width: 15%;
+    width: 50%;
     color: white;
     background-color: #570784;
+	padding: 32px 16px;
 }
 
 #punchline {

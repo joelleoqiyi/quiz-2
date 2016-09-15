@@ -23,30 +23,30 @@ app.get('/jokes', function(req, res) {
     res.send(jokes[randomNumber]);
 });
 
-app.post('/upvote', function(req, res) {
-    console.log("Someone tried to upvote something");
-    console.log(req.body);
-    var jokeIndex = req.body.id;
-    if (typeof jokes[jokeIndex].votes === 'undefined') {
-        console.log("Creating vote for this joke");
-        jokes[jokeIndex].votes = 0;
+//app.post('/upvote', function(req, res) {
+   // console.log("Someone tried to upvote something");
+   // console.log(req.body);
+    //var jokeIndex = req.body.id;
+    //if (typeof jokes[jokeIndex].votes === 'undefined') {
+       // console.log("Creating vote for this joke");
+       // jokes[jokeIndex].votes = 0;
     }
 
-    jokes[jokeIndex].votes++;
+   // jokes[jokeIndex].votes++;
 
-    res.send(jokes[jokeIndex]);
+   // res.send(jokes[jokeIndex]);
 });
 
-app.post('/downvote', function(req, res) {
-    console.log("Someone tried to downvote something.");
-    console.log(req.body);
-    var jokeIndex = req.body.id;
-    if (typeof jokes[jokeIndex].votes === 'undefined') {
-        console.log("Creating vote for this joke");
-        jokes[jokeIndex].votes = 0;
+//app.post('/downvote', function(req, res) {
+   // console.log("Someone tried to downvote something.");
+    //console.log(req.body);
+   // var jokeIndex = req.body.id;
+    //if (typeof jokes[jokeIndex].votes === 'undefined') {
+       // console.log("Creating vote for this joke");
+       // jokes[jokeIndex].votes = 0;
     }
 
-    jokes[jokeIndex].votes--;
+   // jokes[jokeIndex].votes--;
 
-    res.send(jokes[jokeIndex]);
+   // res.send(jokes[jokeIndex]);
 });
